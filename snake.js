@@ -130,7 +130,7 @@ function Draw() {
 
     
     ctx.font = "30px Changa one"
-    ctx.fillText("Speed Level " + SpeedText, 5.5 * Box, 1.6 * Box);
+    ctx.fillText("Speed Level " + SpeedText, 11.5 * Box, 1.6 * Box);
 
     if(NextScoreLevel == Score && SpeedText != "MAX") {
         Speed -= 5;
