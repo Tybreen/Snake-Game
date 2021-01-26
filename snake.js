@@ -138,7 +138,7 @@ function Draw() {
         NextScoreLevel += 1;
         
     }
-    if(Speed == 140) SpeedText = "MAX";
+    if(Speed == 100) SpeedText = "MAX";
 
 }
 
