@@ -131,4 +131,12 @@ function Draw() {
 }
 
 
-let game = setInterval(Draw, 150);
+var NextScoreLevel = 5;
+var Speed = 150;
+
+if(Score == NextScoreLevel && Speed != 100) {
+    Speed -= 5;
+    NextScoreLevel += 5;
+}
+
+let game = setInterval(Draw, Speed);
