@@ -128,15 +128,23 @@ function Draw() {
     ctx.font = "45px Changa one"
     ctx.fillText(Score, 2 * Box, 1.6 * Box)
 
-}
+    
+    ctx.font = "30px Changa one"
+    ctx.fillText("Speed Level " + SpeedText, 5.5 * Box, 1.6 * Box);
 
+    if(NextScoreLevel == Score && SpeedText != "MAX") {
+        Speed -= 5;
+        SpeedText++;
+        NextScoreLevel += 1;
+        
+    }
+    if(Speed == 140) SpeedText = "MAX";
+
+}
 
 var NextScoreLevel = 5;
 var Speed = 150;
+var SpeedText = 1;
 
-if(Score == NextScoreLevel && Speed != 100) {
-    Speed -= 5;
-    NextScoreLevel += 5;
-}
 
 let game = setInterval(Draw, Speed);
