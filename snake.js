@@ -135,7 +135,7 @@ function Draw() {
     if(NextScoreLevel == Score && SpeedText != "MAX") {
         Speed -= 5;
         SpeedText++;
-        NextScoreLevel += 1;
+        NextScoreLevel += 5;
         
     }
     if(Speed == 100) SpeedText = "MAX";
